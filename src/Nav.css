@@ -20,6 +20,8 @@
     left: 20px;
     width: 80px;
     object-fit: contain;
+    margin-left: 22px;
+    height: 30px;
 }
 
 .nav_avatar{
@@ -27,4 +29,94 @@
     right: 20px;
     width: 30px;
     object-fit: contain;
+}
+
+.tab-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.tab-nav li{
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+.tab-nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.tab-nav li a.active{
+    font-weight: bold;
+}
+
+.tab-nav li a:hover{
+    color: rgb(185, 184, 184);
+}
+
+.sideBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+    background-color: transparent;
+}
+
+.sideBox .iconsS{
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+.sideBox .iconsS button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sideBox .iconsS button a{
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+
+.dropbtn {
+    border: none;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}  
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
